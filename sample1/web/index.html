@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form{
+                margin-left: 485px;
+                margin-right: 460px;
+                padding-left: 30px;
+                border: 2px solid black;
+                background-color: #ffe0cc;
+            }
+            label{
+                display:block;
+                padding-bottom: 10px;
+            }
+            body{
+                background-color: aliceblue;
+            }
+            h1{
+                color: #ff6600;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 align="center">Student Registration</h1>
+            <form action="" method="post">
+                <br>
+                <label for="sname">Name:&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="sname"></label>
+                <label for="age">Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" min="0" name="age"></label>
+                <label for="gender">Gender: &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="sex" value="Male">Male&nbsp;&nbsp;
+                    <input type="radio" name="sex" value="Female">Female
+                </label>
+                <label for="address">Address:&nbsp;
+                    <textarea name="address"></textarea>
+                </label>
+                <label for="mob">Mobile:&nbsp;&nbsp;
+                    <input type="number" name="mob"></label>
+                <label for="mail">Email:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" name="mail">
+                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="OK">
+                <br><br>
+            </form>
+            
+        </div>
+    </body>
+</html>
