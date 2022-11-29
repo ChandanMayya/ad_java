@@ -59,7 +59,7 @@ public class CalcServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out=response.getWriter();
-        out.println("<html><hrad><title>Servtel Calculator</title></head><body>");
+        out.println("<html><head><title>Servtel Calculator</title></head><body>");
         double n1=Double.parseDouble(request.getParameter("num1"));
         double n2=Double.parseDouble(request.getParameter("num2"));
         double result=0;
@@ -74,6 +74,7 @@ public class CalcServlet extends HttpServlet {
             result=n1/n2;
         out.println("<h1>Result:"+result);
         out.println("</body></html>");
+        out.println("<style>h1{color: #ff6600;text-align:center;}body{background-color: aliceblue;}</style>");
     }
 
     /**

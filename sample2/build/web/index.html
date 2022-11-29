@@ -9,23 +9,43 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form{
+                margin-left: 405px;
+                margin-right: 470px;
+                padding-left: 30px;
+                border: 2px solid black;
+                background-color: #ffe0cc;
+            }
+
+            label{
+                display:block;
+                padding-bottom: 10px;
+            }
+            body{
+                background-color: aliceblue;
+            }
+            h1{
+                color: #ff6600;
+            }
+        </style>
     </head>
+
     <body>
-        <div>
+        <div><br><br>
             <form action="CalcServlet">
-                
-                Enter First Number:
-                <input type="number" name="num1">
-                Enter Second Number:
-                <input type="number" name="num2">
-                Select an Operation:
-                <input type="radio" name="opr" value="+">ADDITION
-                <input type="radio" name="opr" value="-">SUBTRACTION
-                <input type="radio" name="opr" value="*">MULTIPLY
-                <input type="radio" name="opr" value="/">DIVIDE
-                <br>
+                <label><br>
+                Enter First Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" name="num1"></label>
+                <label>Enter Second Number:&nbsp;
+                    <input type="number" name="num2"></label>
+                <label>Select an Operation:<br>
+                <input type="radio" name="opr" value="+">ADDITION<br>
+                <input type="radio" name="opr" value="-">SUBTRACTION<br>
+                <input type="radio" name="opr" value="*">MULTIPLY<br>
+                <input type="radio" name="opr" value="/">DIVIDE<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="reset">
-                <input type="submit" value="calculate">
+                <input type="submit" value="calculate"><br><br>
             </form>
         </div>
     </body>
